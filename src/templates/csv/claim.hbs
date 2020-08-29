@@ -1,0 +1,23 @@
+{{!-- {
+     "id":"{{msg.ID}}",
+     "resource":{{msg.res1}}
+} --}}
+{{!-- {
+    {{#if msg.res}}
+        "items":[{{#each msg.res}} "{{this}}" {{/each}}]
+    {{/if}}
+} --}}
+{
+     {{#if msg.res}}
+          {{#each msg.res}} 
+            "Type":"{{this.resourceType}}"
+            "claimId":"{{this.Claimuniqueidentifier}}"
+            "expiry":"{{this.Claimserviceenddate}}"
+          {{/each}}
+    {{/if}},
+    {{!-- {{#if msg.hc1}}
+        "items":[{{#each msg.hc1}} "{{this.resourceType}}," {{/each}}]
+    {{/if}} --}}
+    "partial":{{>resources/partial.hbs data=msg.hc2}}
+}
+

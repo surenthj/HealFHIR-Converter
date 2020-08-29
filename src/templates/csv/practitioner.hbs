@@ -1,0 +1,40 @@
+{
+    "Practitioner":{{#if msg.res}}
+    [{{#each msg.res}} {
+    "resourceType":"{{this.resourceType}}"
+    "active":"{{this.active}}"
+    "name":[{
+            "use":"{{this.name_use}}",
+            "family":"{{this.name_use}}",
+            "given":[
+               "{{this.name_given}}"
+            ],
+            "suffix":[
+               "{{this.name_suffix}}"
+            ],
+            "prefix":[
+               "{{this.name_prefix}}"
+            ]
+            }],
+    "telecom":[
+         {
+            "system":"{{this.telecom_system}}",
+            "value":"{{this.telecom_value}}",
+            "use":"{{this.telecom_use}}"
+         }
+      ],
+    "address":[
+         {
+            "use":"{{this.address_use}}",
+            "line":[
+               "{{this.address_line}}"
+            ],
+            "city":"{{this.address_city}}",
+            "postalCode":"{{this.address_postalcode}}",
+            "state":"{{this.address_state}}"
+         }
+      ]}
+    {{/each}}]
+    {{/if}}
+}
+

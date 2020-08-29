@@ -1,0 +1,46 @@
+{
+    {{#if msg.res}}
+    {{#each msg.res}} 
+    "resourceType":"{{this.ResourceType}}" 
+            "identifier": [{
+                "system": "http://benefitsinc.com/certificate",
+                "value": "{{this.Coverage_id}}"
+            }
+        ],
+        "status": "{{this.Coverage_status}}",
+         "type": {
+            "coding": [{
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "{{this.Coverage_type}}"
+                }
+            ]
+        },
+         "policyHolder": {
+            "reference": "Patient/{{Member_id}}"
+        },
+         "subscriber": {
+            "reference": "Patient/{{Subscriber_id}}"
+        },
+        "beneficiary": {
+            "reference": "Patient/{{Member_id}}"
+        },
+         "dependent": "{{Dependent_number}}",
+         "relationship": {
+            "coding": [{
+                    "code": "{{Relationship_to_subscriber}}"
+                }
+            ]
+        },
+        "period": {
+            "start": "{{Start_date}}",
+            "end": "{{End_date}}"
+        },
+        "payor": [{
+            "reference": "Organization/{{Payer_identifier}}"
+        }]
+    }  
+    
+    {{/each}}
+    {{/if}}
+}
+
