@@ -1,0 +1,1 @@
+[{"resourceType":"Practitioner","active":"true","name":[{"use":"official","family":"S","given":["Laks"],"suffix":["D.D.S"],"prefix":["Dr."]}],"telecom":[{"system":"phone","value":"9962456789","use":"work"}],"address":[{"use":"home","line":["534 Erewhon St"],"city":"Tampa","postalCode":"3999","state":"IL"}]}]
