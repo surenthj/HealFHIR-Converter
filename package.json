@@ -10,8 +10,7 @@
     "test": "nyc node --experimental-worker node_modules/mocha/bin/_mocha --reporter-options configFile=mocha.config.json --exit",
     "build": "npm install",
     "pretest": "node --experimental-worker src/init-service.js",
-    "posttest": "eslint src/**/*.js",
-    //"prestart": "node --experimental-worker src/init-service.js",
+    "posttest": "eslint src/**/*.js", 
     "start": "node --experimental-worker src/index.js",
     "eslint": "eslint src/**/*.js"
   },
