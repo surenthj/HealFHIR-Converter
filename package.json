@@ -70,6 +70,10 @@
     ],
     "report-dir": "./.test_output/coverage"
   },
+   "repository": {
+    "type": "git",
+    "url": "https://hc-test-app-fhirconverter.scm.azurewebsites.net/hc-test-app-fhirconverter.git"
+  },
   "mocha": {
     "reporter": "mocha-multi-reporters",
     "spec": "src/**/*.spec.js",
