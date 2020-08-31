@@ -11,7 +11,7 @@
     "build": "npm install",
     "pretest": "node --experimental-worker src/init-service.js",
     "posttest": "eslint src/**/*.js",
-    "prestart": "node --experimental-worker src/init-service.js",
+    //"prestart": "node --experimental-worker src/init-service.js",
     "start": "node --experimental-worker src/index.js",
     "eslint": "eslint src/**/*.js"
   },
