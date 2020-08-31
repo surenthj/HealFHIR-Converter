@@ -109,11 +109,11 @@
             },
             {
               "name": "DOCKER_REGISTRY_SERVER_USERNAME",
-              "value": ""
+              "value": "suenth.j "
             },
             {
               "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
-              "value": ""
+              "value": "Newpw123!"
             },
             {
               "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
