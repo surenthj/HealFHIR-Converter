@@ -31,5 +31,5 @@ jobs:
       env:
         IMAGE_NAME: healfhir.azurecr.io/healthplatformregistry
       run: |
-        docker build . -t $IMAGE_NAME:${{ github.sha }} -t $IMAGE_NAME:v${{ steps.package-version.outputs.current-version }} -t $IMAGE_NAME:latest
+        docker build . -t $IMAGE_NAME:${{ github.sha }} -t $IMAGE_NAME:v${{ steps.package-version.outputs.current-version }} -t $IMAGE_NAME:v10
         docker push $IMAGE_NAME
