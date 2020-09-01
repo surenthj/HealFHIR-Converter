@@ -43,7 +43,7 @@
   },
   "variables": {
     "lowerCaseServiceName": "[toLower(parameters('serviceName'))]",
-    "registryName": "healthplatformregistry.azurecr.io",
+    "registryName": "healfhir.azurecr.io",
     "resourcesLocation": "[resourceGroup().location]",
     "serverfarmName": "[concat(variables('lowerCaseServiceName'), '-plan')]",
     "appInsightName": "[concat(variables('lowerCaseServiceName'), '-appinsight')]",
@@ -109,11 +109,11 @@
             },
             {
               "name": "DOCKER_REGISTRY_SERVER_USERNAME",
-              "value": "suenth.j "
+              "value": "healfhir"
             },
             {
               "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
-              "value": "Newpw123!"
+              "value": "healfhir.azurecr.io"
             },
             {
               "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
